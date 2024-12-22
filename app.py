@@ -3,7 +3,7 @@ from database import get_db_connection
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})  # Ajusta los orígenes según tu necesidad
+CORS(app, origins=["https://nike-joaquin.netlify.app"])
 
 def execute_query(query):
     try:
