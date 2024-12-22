@@ -18,7 +18,7 @@ def execute_query(query):
         print("Database error:", e)
         raise
 
-@app.route('/categories', methods=['GET'])
+@app.route('/categories', methods=['POST'])
 def categories():
     try:
         query = 'SELECT * FROM categories'
@@ -27,7 +27,7 @@ def categories():
     except Exception as e:
         return jsonify({"error": "Something went wrong", "details": str(e)}), 500
 
-@app.route('/products', methods=['GET'])
+@app.route('/products', methods=['POST'])
 def products():
     try:
         query = 'SELECT * FROM products'
