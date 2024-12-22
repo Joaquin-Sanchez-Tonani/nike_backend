@@ -2,10 +2,10 @@ import mysql.connector
 
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",
+        host="autorack.proxy.rlwy.net",
         user="root",
-        password="mosquito15",
-        database="ecommerce_site001"
+        password="gUwUGiXhDyajFXyMPEVyOduaMMeMlAYg",
+        database="railway"
     )
 
 
