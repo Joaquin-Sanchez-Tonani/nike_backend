@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from database import get_db_connection
 from flask_cors import CORS
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:5173", "https://732693c135089d87863b6a61a906720c.serveo.net/"])
+CORS(app, origins=["https://nike-joaquin.netlify.app/"])
 @app.route('/categories', methods=['POST'])
 def categories():
     try:
